@@ -1,0 +1,313 @@
+.background{
+
+    -webkit-animation-name: anochecer;
+      animation-name:anochecer;
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+      -webkit-animation-iteration-count:infinite; 
+      animation-iteration-count:infinite;
+      -webkit-animation-direction:linear;
+    }
+    
+    @-webkit-keyframes anochecer{
+      from {background:lightblue;}
+      to{background:#00006d;}
+    }
+    
+    .background {
+      width:2000px;
+      height:2000px;
+      background:lightblue;
+      position:absolute transparent;
+      transition: 5seg black
+    }
+    
+    
+    .rueda {
+      position:relative;
+      width:500px;
+      top:200px;
+      left:200px;
+    }
+    
+    .llanta{
+      width:50px;
+      height:50px;
+      border: 6px solid black;
+      border-radius:50%;
+      position:absolute;
+      
+    }
+    
+    .tornillo-central{
+      width:5px;
+      height:5px;
+      border:3px solid black;
+      border-radius:50%;
+      position:absolute;
+      top:24px;
+      left:28px;
+    }
+    
+    .primer-eje{
+      width:56px;
+      height:8px;
+      background:black;
+      position:relative;
+      top:28px;
+    }
+    
+    .segundo-eje {
+      width:56px;
+      height:8px;
+      background:black;
+      position:absolute;
+      top:28px;
+      left:3px;
+      transform:rotate(90deg);
+    }
+    
+    .rueda {
+       -webkit-animation-name: desplazamiento;
+      animation-name:desplazamiento;
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+      -webkit-animation-iteration-count:infinite; 
+      animation-iteration-count:infinite;
+      -webkit-animation-direction:linear;
+    
+    }
+    
+    @-webkit-keyframes desplazamiento {
+      from {transform:rotate(0deg)  translateX(0px);}
+      to {transform:rotate(0deg)  translateX(800px); -webkit-transform-origin:50% 50%;transform-origin:50% 50%;} 
+    }
+    
+    .cuerpo-auto {
+      width:60px;
+      height:170px;
+      background:red;
+      position:absolute;
+      transform:rotate(90deg);
+      top:-115px;
+      left:55px;
+      border: 2px solid black;
+    }
+    
+    .techo-auto {
+      width:60px;
+      height:100px;
+      background:red;
+      position:absolute;
+      top:37px;
+      left:-62px;
+      border:2px solid black;
+      border-right:transparent;
+    }
+    
+    .parabrisas {
+      width:45px;
+      height:18px;
+      background:lightblue;
+      position:absolute;
+      top:37px;
+      left: -47px;
+      border: 1px solid black;
+    }
+    
+    .llanta-2 {
+      width:50px;
+      height:50px;
+      border: 6px solid black;
+      border-radius:50%;
+      position:absolute;
+      left:60px;
+    }
+    
+    .tornillo-central-2 {
+       width:5px;
+      height:5px;
+      border:3px solid black;
+      border-radius:50%;
+      position:absolute;
+      top:25px;
+      left:83px;
+    }
+    
+    .primer-eje-1 {
+      width:56px;
+      height:8px;
+      background:black;
+      position:absolute;
+      top:27px;
+      left:60px;
+      animation:rodar 12s infinite;
+    }
+    
+    .segundo-eje-2 {
+       width:56px;
+      height:8px;
+      background:black;
+      position:absolute;
+      top:28px;
+      left:63px;
+      transform:rotate(90deg);
+      animation:rotar 12s infinite;
+    }
+    
+    .tubo-escape {
+      width:15px;
+      height:10px;
+      background:black;
+      position:absolute;
+      top:173px;
+      left:40px;
+      transform:rotate(90deg);
+    }
+    
+    .foco-delantero {
+      width:15px;
+      height:15px;
+      background:white;
+      border:1px solid black;
+      border-radius:50%;
+    }
+    
+    .foco-trasero {
+      width:15px;
+      height:15px;
+      background:white;
+      border:1px solid black;
+      position:absolute;
+      top:154px;
+      border-radius:50%;
+    }
+    
+    .foco-trasero:hover{
+      background:yellow;
+      transition: 0.4seg;
+      
+    }
+    
+    .foco-delantero:hover {
+      background:yellow;
+    }
+    
+    .primer-eje {
+      -webkit-animation-name: rodar;
+      animation-name:rodar;
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+      -webkit-animation-iteration-count:infinite; 
+      animation-iteration-count:infinite;
+      -webkit-animation-direction:linear;
+      
+    }
+    
+    @-webkit-keyframes rodar {
+      from{ transform:rotate(0deg)
+      }
+      to{ transform:rotate(360deg)}
+    }
+    
+    .segundo-eje {
+      -webkit-animation-name: rotar;
+      animation-name:rotar;
+      -webkit-animation-duration: 12s;
+      animation-duration: 12s;
+      -webkit-animation-iteration-count:infinite; 
+      animation-iteration-count:infinite;
+      -webkit-animation-direction:linear;
+      transform:rotate(90deg);
+      
+    }
+    
+    @-webkit-keyframes rotar{
+      from{ transform:rotate(90deg);
+      }
+      to{ transform:rotate(450deg)}
+    }
+    
+    .calle {
+      width:1500px;
+      height:20px;
+      background: black;
+      position:absolute;
+      top:270px;
+      left:-10px;
+    }
+    
+    .sol {
+      width:40px;
+      height:40px;
+      position:relative;
+      background:yellow;
+      border-radius:50%;
+      top:-1985px;
+      left:900px;
+    }
+    
+    .desierto{
+      width:1500px;
+      height:1000px;
+      position:relative;
+      background:orange;
+      top:-1766px;
+    }
+    
+    .cactus-1{
+      width:30px;
+      height:150px;
+      background:green;
+      position:absolute;
+      left:100px;
+      top:120px;
+      border-radius:0 0 50% 50%;
+      transform:rotate(180deg);
+    }
+    
+    .sol:hover{
+      background:white;
+    }
+    
+    .cactus-2{
+      width:20px;
+      height:75px;
+      background:green;
+      position:absolute;
+      left:71px;
+      top:120px;
+      border-radius:0 0 50% 50%;
+      transform:rotate(180deg);
+    }
+    
+    .cactus-2-1{
+      width:20px;
+      height:30px;
+      background:green;
+      position:absolute;
+      left:90px;
+      top:170px;
+      transform:rotate(90deg);
+    }
+    
+    .cactus-3{
+       width:20px;
+      height:75px;
+      background:green;
+      position:absolute;
+      left:140px;
+      top:150px;
+      border-radius:0 0 50% 50%;
+      transform:rotate(180deg);
+    }
+    
+    .cactus-3-1{
+       width:20px;
+      height:30px;
+      background:green;
+      position:absolute;
+      left:130px;
+      top:200px;
+      transform:rotate(90deg);
+    }

@@ -1,0 +1,48 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static '/Bus/bus.css' %}">
+    <link rel="stylesheet" href="static/Travel/css/style.css">
+</head>
+<body>
+  <header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fa-solid fa-earth-asia"></i>Paryatak</a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="home">Home</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">about</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="login">Login</a>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="registration">Sighnup</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">gallery</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">blogs</a>
+    </nav>
+    <i class="far fa-user fa-2x" style="color:#fff;" >  {{ request.session.uname }}</i> 
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="{% url 'logout'%}" class="btn">Logout</a>
+
+</header>
+  <video src="{%static '/Bus/video.mp4'%}" muted loop autoplay ></video>
+    
+  <div class="cards-row">
+  {% for entry in entries %}
+<div class="cards-column">
+    <div class="card">
+      
+        <h1>{{ entry.Company }}</h1>
+        <p class="price">$19.99</p>
+        <p>{{ entry.date }}</p>
+        <p><button>Book Now</button></p>
+     
+      </div>
+      </div>
+      {% endfor %}
+    </div>
+</body>
+</html>
